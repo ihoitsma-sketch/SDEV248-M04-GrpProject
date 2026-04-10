@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dv1rkdce23w5h"]
+
+[ext_resource type="Texture2D" uid="uid://dqpkwu8p7doe5" path="res://assets/goblin.png" id="1_dl46o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u6mjv"]
+size = Vector2(88, 117)
+
+[node name="Goblin" type="CharacterBody2D" unique_id=1599170779]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=608919492]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_dl46o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1530514134]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_u6mjv")
